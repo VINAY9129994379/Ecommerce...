@@ -6,7 +6,7 @@ function NewCollection() {
   const [new_collections, setNew_collections] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/newcollections')
+    fetch('https://ecommerce-bg4i.onrender.com/newcollections')
       .then((response) => response.json())
       .then((data) => setNew_collections(data))
       .catch((error) => console.error('Error fetching collections:', error));
