@@ -28,7 +28,7 @@ function AddProduct() {
         formData.append('product', image);
 
         try {
-            const uploadResponse = await fetch('http://localhost:5000/upload', {
+            const uploadResponse = await fetch('https://ecommerce-bg4i.onrender.com/upload', {
                 method: 'POST',
                 body: formData
             });
@@ -38,7 +38,7 @@ function AddProduct() {
                 product.image = responseData.image_url;
                 console.log(product);
 
-                const addProductResponse = await fetch('http://localhost:5000/addproduct', {
+                const addProductResponse = await fetch('https://ecommerce-bg4i.onrender.com/addproduct', {
                     method: 'POST',
                     headers: {
                         Accept: 'application/json',
