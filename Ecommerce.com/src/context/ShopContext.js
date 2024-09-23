@@ -16,7 +16,7 @@ const ShopContextProvider = (props) => {
 
     useEffect(() => {
         // Fetch all products
-        fetch('http://localhost:5000/allproducts')
+        fetch('https://ecommerce-bg4i.onrender.com/allproducts')
             .then((response) => response.json())
             .then((data) => setAll_product(data))
             .catch((error) => console.error('Error fetching products:', error));
