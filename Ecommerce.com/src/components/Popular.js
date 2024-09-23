@@ -6,7 +6,7 @@ function Popular() {
   const [data_product,setData_product]=useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:5000/popularinwomen')
+    fetch('https://ecommerce-bg4i.onrender.com/popularinwomen')
     .then((response)=>response.json())
     .then((data)=>setData_product(data));
   },[])
