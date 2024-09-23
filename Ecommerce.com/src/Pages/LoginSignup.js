@@ -16,7 +16,7 @@ function LoginSignup() {
   const login = async () => {
     console.log("Login Function Executed", formData);
     try {
-      const response = await fetch('http://localhost:5000/login', {
+      const response = await fetch('https://ecommerce-bg4i.onrender.com/login', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -40,7 +40,7 @@ function LoginSignup() {
   const signup = async () => {
     console.log("Signup Function Executed", formData);
     try {
-      const response = await fetch('http://localhost:5000/signup', {
+      const response = await fetch('https://ecommerce-bg4i.onrender.com/signup', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
